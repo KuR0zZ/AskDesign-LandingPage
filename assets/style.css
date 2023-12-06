@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,300&display=swap');
+
+body {
+  margin: 0;
+  background: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+/* .logo {
+  color: black;
+  font-size: 32px;
+  font-weight: 700;
+  font-style: italic;
+} */
+
+.logo img {
+  width: 100px;
+}
+
+.download {
+  border: none;
+  border-radius: 8px;
+  background: black;
+  color: white;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 32px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  width: 1100px;
+  display: flex;
+  align-items: center;
+  padding: 48px 24px;
+  margin: 10px;
+  flex-wrap: wrap;
+  background-color: #98f5e1;
+  border-radius: 10px;
+}
+
+.header h1 {  
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.image {
+  flex: 1.25 1 0;
+  text-align: center;
+  margin: 10px 20px;
+  margin-right: 0;
+}
+
+img {
+  width: 270px;
+}
+
+.header .text {
+  flex: 1;
+  margin: 24px;
+  margin-left: 48px;
+  font-size: 20px;
+}
+
+.features-container .features .text {
+  flex: 1;
+  margin: 24px;
+  margin-left: 48px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.features-container {
+  display: flex;
+  justify-content: center;
+}
+
+.features {
+  width: 1100px;
+}
+
+.features-header {
+  font-size: 40px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.booking, .portal-berita, .portofolio {
+  display: flex;
+  padding: 0 48px;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+}
+
+.call-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+.call {
+  width: 1100px;
+  text-align: center;
+  padding: 24px;
+  margin: 0 24px;
+  border-top: 1px solid #ebebeb;
+}
+
+.call-text {
+  margin-bottom: 24px;
+  font-size: 20px;
+}
+
+.footer {
+  background-color: #ebebeb;
+  text-align: center;
+  padding: 32px;
+}
+
+@media screen and (max-width: 664px) {
+  .navbar {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  
+  .navbar .download {
+    display: none;
+  }
+
+  .header {
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .header h1 {
+    font-size: 40px;
+  }
+
+  .text {
+    flex: 1;
+    margin: 24px;
+    margin-left: 48px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .booking .image {
+    order: 2;
+  }
+
+  .booking .text {
+    order: 1;
+  }
+
+  .portofolio .image {
+    order: 2;
+  }
+
+  .portofolio .text {
+    order: 1;
+  }
+}
