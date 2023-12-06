@@ -40,6 +40,10 @@ body {
   font-weight: bold;
 }
 
+.download:hover {
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
   color: black;
